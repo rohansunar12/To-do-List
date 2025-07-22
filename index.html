@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <h2>To-Do List <img src="images/icon.png" alt="icon" /></h2>
+
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+
+      <div class="filters">
+        <button onclick="setFilter('all')" id="filter-all" class="active">All</button>
+        <button onclick="setFilter('active')" id="filter-active">Active</button>
+        <button onclick="setFilter('completed')" id="filter-completed">Completed</button>
+      </div>
+
+      <ul id="list-container"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
